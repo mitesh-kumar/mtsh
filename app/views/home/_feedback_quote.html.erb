@@ -1,0 +1,32 @@
+<!-- Feedback Form -->
+<div class="g-bg-color--sky-light">
+    <div class="container g-padding-y-80--xs g-padding-y-125--sm">
+        <div class="g-text-center--xs g-margin-b-80--xs">
+            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Feedback / Quote</p>
+            <h2 class="g-font-size-32--xs g-font-size-36--md">Send us a note / quote</h2>
+        </div>
+        <div id="feedback-message"></div>
+        <%= form_for @feedback,  :url => (home_feedback_subscriber_path),:html => { :id =>'feedback',:role=>'form'},:remote => true do |f| %>
+            <div class="row g-margin-b-40--xs">
+                <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
+                    <div class="g-margin-b-20--xs">
+                        <%= f.text_field :name, class: 'form-control s-form-v2__input g-radius--50',placeholder: "* Name" %>
+                    </div>
+                    <div class="g-margin-b-20--xs">
+                        <%= f.email_field :email, class: 'form-control s-form-v2__input g-radius--50',placeholder: '* Email'%>
+                    </div>
+                    <%= f.text_field :phone, class: 'form-control s-form-v2__input g-radius--50',placeholder: "* Phone",type: "number" %>
+                </div>
+                <div class="col-sm-6">
+                    <%= f.text_area :message, class: 'form-control s-form-v2__input g-radius--10 g-padding-y-20--xs', :rows => 9,placeholder: '* Your message' %>
+                </div>
+            </div>
+            <div class="g-text-center--xs">
+                <%= f.button(type: "submit", class: "text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs") do %>
+                Submit
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+</div>
+        <!-- End Feedback Form -->

@@ -11,5 +11,26 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery.min
+//= require jquery.migrate.min
+//= require bootstrap.min
+//= require jquery.back-to-top.min
+//= require jquery.scrollbar.min
+//= require jquery.magnific-popup.min
+//= require swiper.jquery.min
+//= require waypoint.min
+//= require counterup.min
+//= require jquery.cubeportfolio.min
+//= require jquery.parallax.min
+//= require jquery.wow.min
+//= require global.min
+//= require header-sticky.min
+//= require scrollbar.min
+//= require magnific-popup.min
+//= require swiper.min
+//= require counter.min
+//= require portfolio-3-col.min
+//= require parallax.min
+//= require wow.min
+//= require vidbg.min
 //= require turbolinks
-//= require_tree .

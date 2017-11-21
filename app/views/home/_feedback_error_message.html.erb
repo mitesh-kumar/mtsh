@@ -1,0 +1,10 @@
+<% if @feedback.errors.any? %>
+<% @feedback.errors.full_messages.each do |message| %>
+<div class="bs-example">
+	<div class="alert alert-warning message-top">
+		<a href="#" class="close" data-dismiss="alert">&times;</a>
+		<strong>Warning!</strong> <%= message %>
+	</div>
+</div>
+<% end %>
+<% end %>

@@ -1,0 +1,7 @@
+$('#feedback-div').html("<%= j render(:partial => 'feedback_quote') %>");
+<% if @feedback.errors.any? %>
+	$('#feedback-message').html("<%= j render(:partial => 'feedback_error_message') %>");
+<% else %>
+	$('#feedback-message').html("<%= j render(:partial => 'feedback_message') %>");
+<% end %>
+$('#feedback-message').fadeIn('slow').delay(5000).hide(0);

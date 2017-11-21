@@ -1,0 +1,11 @@
+<div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+	<%= form_for @new_subscriber,  :url => (home_create_subscriber_path),:html => {:class => 'input-group', :id =>'subscriber',:role=>'form'},:remote => true do |f| %>
+	<%= f.email_field :email, class: 'form-control s-form-v1__input g-radius--left-50',placeholder: 'Enter your email'%>
+	<span class="input-group-btn">
+		<%= f.button(type: "submit", class: "s-btn s-btn-icon--md s-btn-icon--white-brd s-btn--white-brd g-radius--right-50") do %>
+		<i class="ti-arrow-right"></i>
+		<% end %>
+	</span>
+	<% end %>
+	<div id="subscriber-message"></div>
+</div>

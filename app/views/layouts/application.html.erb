@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
   <head>
     <title>Mtsh</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= yield :js %>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
   </head>
 
   <body>
+    <%= render "layouts/header" %>
     <%= yield %>
+    <%= render "layouts/footer" %>
   </body>
 </html>

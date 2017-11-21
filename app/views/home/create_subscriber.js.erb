@@ -1,0 +1,8 @@
+$('#subscriber-count').html("<%= j render(:partial => 'subscriber_count') %>");
+$('#subscriber-div').html("<%= j render(:partial => 'subscription_email') %>");
+<% if @new_subscriber.errors.any? %>
+	$('#subscriber-message').html("<%= j render(:partial => 'subscriber_error_message') %>");
+<% else %>
+	$('#subscriber-message').html("<%= j render(:partial => 'subscriber_message') %>");
+<% end %>
+$('#subscriber-message').fadeIn('slow').delay(5000).hide(0);

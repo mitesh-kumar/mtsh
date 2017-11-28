@@ -1,0 +1,7 @@
+$('#quote-div').html("<%= j render(:partial => 'quote') %>");
+<% if @quote.errors.any? %>
+	$('#quote-message').html("<%= j render(:partial => 'quote_error_message') %>");
+<% else %>
+	$('#quote-message').html("<%= j render(:partial => 'quote_message') %>");
+<% end %>
+$('#quote-message').fadeIn('slow').delay(5000).hide(0);

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   post 'home/create_subscriber'
   post 'home/feedback_subscriber'
   get 'home/ror'
+  post 'home/create_quote'
 end

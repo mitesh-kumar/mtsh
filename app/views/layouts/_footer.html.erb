@@ -8,28 +8,25 @@
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
                                 <li><a class="g-font-size-15--xs g-color--white-opacity" href="/" data-turbolinks="false">Home</a></li>
                                 <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">About</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Work</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Contact</a></li>
+                                <li><%= link_to "Contacts", home_contact_path,class: 'g-font-size-15--xs g-color--white-opacity', data: { turbolinks: false } %></li>
                             </ul>
                         </div>
                         <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Twitter</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Facebook</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Instagram</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">YouTube</a></li>
+                                <li><%= link_to "Twitter", "https://twitter.com/MtshSoftware",class: 'g-font-size-15--xs g-color--white-opacity', data: { turbolinks: false }, target: :_blank  %></li>
+                                <li><%= link_to "Facebook", "https://www.facebook.com/mtshsoftware/",class: 'g-font-size-15--xs g-color--white-opacity', data: { turbolinks: false }, target: :_blank  %></li>
+                                <li><%= link_to "Instagram", "https://www.instagram.com/mtshsoftware/",class: 'g-font-size-15--xs g-color--white-opacity', data: { turbolinks: false }, target: :_blank  %></li>
                             </ul>
                         </div>
                         <div class="col-sm-2 g-margin-b-40--xs g-margin-b-0--md">
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Subscribe to Our Newsletter</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Privacy Policy</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Terms &amp; Conditions</a></li>
+                                <li><%= link_to "Privacy Policy", privacy_policy_path,class: 'g-font-size-15--xs g-color--white-opacity', data: { turbolinks: false } %></li>
+                                <li><%= link_to "Terms & Conditions", terms_condition_path,class: 'g-font-size-15--xs g-color--white-opacity', data: { turbolinks: false } %></li>
                             </ul>
                         </div>
                         <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md">
                             <h3 class="g-font-size-18--xs g-color--white">MTSH SOFTWARE &amp; CONSULTANCY PRIVATE LIMITED</h3>
-                            <p class="g-color--white-opacity">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+                            <p class="g-color--white-opacity">We are a creative company focusing on code quality, agility &amp; time constraints. Somewhere with Modern Technology Software Hosting (MTSH).</p>
                         </div>
                     </div>
                 </div>
@@ -45,7 +42,7 @@
                         </a>
                     </div>
                     <div class="col-xs-6 g-text-right--xs">
-                        <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light"><a href="/" data-turbolinks="false">Copyright</a> All Rights Reserved © 2017</a></p>
+                        <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light"><a href="/" data-turbolinks="false">Copyright</a> All Rights Reserved © 2018</a></p>
                     </div>
                 </div>
             </div>

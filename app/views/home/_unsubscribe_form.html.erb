@@ -1,0 +1,11 @@
+<%= form_for @subscriber,  :url => (home_update_subscription_path(id: @subscriber.id)),:html => { :id =>'contact',:role=>'form',:class => 'center-block g-width-500--sm g-width-550--md'} do |f| %>
+    
+    <%= f.hidden_field :active, :value => false%>
+    <div id="contact-message"></div>
+    <div class="g-text-center--xs">
+        <%= f.button(type: "submit", class: "text-uppercase s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs") do %>
+                Unsubscribe
+        <% end %>
+        <%= link_to 'Cancel', root_url,:class => "text-uppercase s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs" %>
+    </div>
+<% end %>

@@ -1,0 +1,7 @@
+$('#contact-div').html("<%= j render(:partial => 'contact_form') %>");
+<% if @contact.errors.any? %>
+	$('#contact-message').html("<%= j render(:partial => 'contact_error_message') %>");
+<% else %>
+	$('#contact-message').html("<%= j render(:partial => 'contact_message') %>");
+<% end %>
+$('#contact-message').fadeIn('slow').delay(5000).hide(0);

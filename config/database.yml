@@ -95,7 +95,8 @@ production:
   <<: *default
   database: mtsh_production
   # adapter: postgresql
-  host: localhost
-  password:
+  # host: localhost
+  username: myapp
+  password: 12345
   # username: mtsh
   # password: <%= ENV['MTSH_DATABASE_PASSWORD'] %>

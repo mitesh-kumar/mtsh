@@ -22,15 +22,20 @@ default: &default
   # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   adapter: postgresql
   encoding: unicode
+  # host: localhost
+  # pool: 5
+  # timeout: 5000
+  # username: postgres
+  # password: '12345'
+
+
+development:
+  <<: *default
   host: localhost
   pool: 5
   timeout: 5000
   username: postgres
   password: '12345'
-
-
-development:
-  <<: *default
   database: mtsh_development
 
   # The specified database role being used to connect to postgres.
@@ -89,5 +94,5 @@ test:
 production:
   <<: *default
   database: mtsh_production
-  username: mtsh
-  password: <%= ENV['MTSH_DATABASE_PASSWORD'] %>
+  # username: mtsh
+  # password: <%= ENV['MTSH_DATABASE_PASSWORD'] %>

@@ -88,4 +88,15 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.default_url_options = { :host => "https://gentle-waters-74584.herokuapp.com/" }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+   address:              'smtpout.asia.secureserver.net',
+   port:                 80,
+   domain:               'www.mtshsoftwareconsultancy.com',
+   user_name:            'support@mtshsoftwareconsultancy.com',
+   password:             'mtsh@SUPPORT123',
+   authentication:       'plain',
+   enable_starttls_auto: true  
+}
 end

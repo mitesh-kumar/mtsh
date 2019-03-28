@@ -54,5 +54,16 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.action_mailer.delivery_method = :letter_opener
   # config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.smtp_settings = {
+  #     address:                'smtp.zoho.com',
+  #     port:                   465,
+  #     user_name:              ENV["zoho_user_name"],
+  #     domain:                 ENV["zoho_domain"],
+  #     password:               ENV["zoho_password"],
+  #     authentication:         'plain',
+  #     ssl:                    true,
+  #     tls:                    true,
+  #     :enable_starttls_auto => true 
+  #   }
 
 end
